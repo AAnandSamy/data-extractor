@@ -14,3 +14,11 @@ Slick is a modern database query and access library for Scala, Data extractor ba
   ```
 
 - performance test on Oracle DB
+  ```csv
+  |Records   |Retrieval-time|
+  |----------|--------------|
+  |0 - 100   | 4 Seconds    |
+  |0 - 1000  | 11 Seconds   |
+  |0 - 10000 | 90 Seconds   |
+
+  ```

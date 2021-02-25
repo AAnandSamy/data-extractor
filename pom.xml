@@ -29,12 +29,24 @@
             <artifactId>slf4j-nop</artifactId>
             <version>1.6.4</version>
         </dependency>
+        <dependency>
+            <groupId>com.typesafe.slick</groupId>
+            <artifactId>slick-hikaricp_2.11</artifactId>
+            <version>3.3.3</version>
+        </dependency>
+
         <!--JDBC-->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.2.19</version>
         </dependency>
+        <dependency>
+            <groupId>com.oracle.jdbc</groupId>
+            <artifactId>ojdbc8</artifactId>
+            <version>12.2.0.1</version>
+        </dependency>
+
 
 
     </dependencies>
