@@ -1,6 +1,10 @@
 package com.org.data.extractor
 
 import java.util.Date
+
+import slick.basic.{DatabaseConfig, StaticDatabaseConfig}
+import slick.jdbc.JdbcProfile
+
 import scala.concurrent.{Await, Future}
 import scala.concurrent.duration.Duration
 import scala.collection.mutable.ArrayBuffer
@@ -14,8 +18,6 @@ import slick.driver._
 import slick.driver.H2Driver.api._
 
 object Extract extends App {
-
-
   try {
     val bf = new Date
     val db = Database.forConfig("mydb")
@@ -30,7 +32,6 @@ object Extract extends App {
     // compare execution time
     println(s"""\nBefore : $bf\nAfter  : $af""")
     println(f)
-
 
   } catch {
     case e: Exception =>
