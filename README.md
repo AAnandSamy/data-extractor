@@ -2,7 +2,7 @@
 
 Slick is a modern database query and access library for Scala, Data extractor based on slick API.
 
-- performance
+- performance test Postgres DB
   ```csv
   |Records   |Retrieval-time|
   |----------|--------------|
@@ -12,3 +12,5 @@ Slick is a modern database query and access library for Scala, Data extractor ba
   |0 - 100000| 4 Seconds    |
   |0 - 400000| 7 Seconds    |
   ```
+
+- performance test Oracle DB
